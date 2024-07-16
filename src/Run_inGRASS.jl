@@ -53,3 +53,6 @@ end
 println("+++++++++++++++ Condition number +++++++++++++")
 CND = eigs(L_add, L)
 println("The recovered condition number = ", maximum(CND[1]))
+
+## Output
+WmtxW("Output.mtx", L)
