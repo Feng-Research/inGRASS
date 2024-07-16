@@ -554,3 +554,18 @@ function DelE(dictF, FL, ext, Nid_mat, dictSM, WP, W_add)
 
     return ESA, WP, W_add
 end # function
+
+## Generating the output
+function WmtxW(Inp, L)
+    LT = sparse(triu(L)')
+    fdz = findnz(LT)
+    rr = fdz[1]
+    cc = fdz[2]
+    vv = fdz[3]
+    open(Inp, "w") do io
+        println(io, size(L, 1), " ", size(L, 1), " ", nnz(LT))
+        for i =1:length(rr)
+            println(io, rr[i], " ", cc[i], " ", vv[i])
+        end #end of i
+    end
+end
