@@ -80,36 +80,6 @@ function mx_func(ar)
     return mx2
 end
 
-#=
-function mtx2ar(Inp)
-
-    io = open(Inp, "r")
-    rr = zeros(Int, 0)
-    cc = zeros(Int, 0)
-    while !eof(io)
-        ln = readline(io)
-        sp = split(ln)
-        r = parse(Int, sp[1])
-        c = parse(Int, sp[2])
-        append!(rr, r)
-        append!(cc, c)
-    end
-
-    ar = Any[]
-
-    for ii = 1:length(rr)
-
-        push!(ar, sort([rr[ii], cc[ii]]))
-
-    end # for ii
-
-    A = Clique_sm(ar)
-
-    return ar, A
-
-end #end of function
-=#
-
 function mtx2arW(Inp)
     io = open(Inp, "r")
     rr = zeros(Int, 0)
