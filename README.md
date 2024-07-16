@@ -15,10 +15,15 @@ spectral sparsification of graphs obtained from various datasets, such as circui
 
 # Requirements
 You need the following Julia packages to run the code:
+
 Arpack v0.4.0
+
 LinearAlgebra
+
 SparseArrays
+
 RandomV06 v0.0.2
+
 Laplacians v1.2.0 `https://github.com/danspielman/Laplacians.jl.git#master`
 
 You can use the following commands to add a package in Julia:
