@@ -1,4 +1,4 @@
-# inGRASS
+# inGRASS: Incremental Graph Spectral Sparsification via Low-Resistance-Diameter Decomposition
 
 https://arxiv.org/abs/2402.16990
 
