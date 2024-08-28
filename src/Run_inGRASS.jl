@@ -1,15 +1,7 @@
 include("Functions.jl")
 
-cd("../data/")
-## Importing the original matrix
-ar_org, W, A = mtx2arWG("G2_circuit.mtx")
-
-## Importing the initial graph sparsifier
-arP, WP, AP = mtx2arW("G2_initial_sparsifier.mtx")
-
-## Importing the newly added edges; the edges are weighted
-ext, W_add = Rext("extEG.mtx")
-cd("../src/")
+## Reading dataset
+include("G2_file.jl")
 
 ## Target condition number
 TCND = 87
